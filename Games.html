@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <link rel="icon" href="img/favicon.png">
+    <title>Games | BAR</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bulma/css/bulma.css">
+    <head>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="Home.html">
+                    <img src="img/favicon.png">
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a onclick="location.href='Home.html';" class="navbar-item">
+                        Home
+                    </a>
+
+                    <a onclick="location.href='Games.html';" class="navbar-item">
+                        Games
+                    </a>
+
+                    <a onclick="location.href='GGSafe.html';" class="navbar-item">
+                        GGSafe
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a onclick="location.href='Tools.html';" class="navbar-link">
+                            Tools
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a target="_blank" onclick="window.open('MusicPlayer.html','popup','width=350,height=700');" class="navbar-item">
+                                Music Player
+                            </a>
+                            <a onclick="location.href='Chat.html'" class="navbar-item">
+                                Chat
+                            </a>
+                            <a onclick="window.open('Tools/jitsicreator.html','popup','width=480,height=360');" class="navbar-item">
+                                Meeting Creator
+                            </a>
+                            <hr class="navbar-divider">
+                            <a onclick="location.href='Tools.html';" class="navbar-item">
+                                See All Tools
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a onclick="window.open('RN.txt','popup','width=480,height=380');" class="navbar-item">
+                            V 1.7.0
+                        </a>
+                        <div class="buttons">
+                            <a onclick="location.href='Logout.html';" class="button is-primary">
+                                <strong>Logout</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <body>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+                body {
+                    background-color: aliceblue;
+                    font-family: Montserrat;
+                }
+
+                .content {
+                    margin: 50px;
+                    font-family: Montserrat;
+                }
+                .title {
+                    font-size: 50px;
+                    text-align: center;
+                }
+                .headings {
+                    font-size: 20px;
+                    text-align: center;
+                }
+                .text {
+                    text-align: center;
+                    font-size: 12;
+                }
+                .thumbnail {
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                    padding: 5px;
+                    width: 300px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 200%;
+                }
+                .thumbnail:hover {
+                    box-shadow: 0 0 3px 2px grey;
+                    border: 1px solid white;
+                }
+                .thumbnail::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+                .imgContainer {
+                    float: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-bottom: 5%;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 90%;
+                }
+            </style>
+        </body>
+    </head>
+    <body>
+        <div style="margin: 50px; background-color: #ffffff; margin-top: 40px; margin-bottom: 10;" class="notification is-info">
+            <button class="delete"></button>
+            <p style="color: #3850b7;">This is a sandbox file feel free to change any of the code, but please remember that these changes might not be added to the BAR website. If you need any help coding the website or understanding the code click on the button below. Please
+                <strong>DO NOT</strong>
+                delete this popup it will be removed when the BAR site is published.</p>
+            <button class="button" onclick="window.open('Dev.html')">Open Dev Notes</button>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+                        const $notification = $delete.parentNode;
+
+                        $delete.addEventListener('click', () => {
+                            $notification.parentNode.removeChild($notification);
+                        });
+                    });
+                });
+            </script>
+        </div>
+        <br>
+        <h1 class="title">Games</h1>
+        <div class="content">
+            <h5 class="headings">Game of The Day:</h5>
+            <a target="_blank" href="Games/2048/index.html">
+                <img draggable="false" class="thumbnail" src="img/2048.png" alt="Game Of The Week" style="width:300px">
+            </a>
+            <p class="text">2048</p>
+            <br>
+            <div class="imgContainer">
+                <a target="_blank" href="Games/Appel.html">
+                    <img draggable="false" src="img/appel.png" alt="Appel" style="width:300px">
+                </a>
+                <a target="_blank" href="Games/PM.html">
+                    <img draggable="false" src="img/pm.png" alt="Paper Minecraft" style="width:300px">
+                </a>
+                <a target="_blank" href="Games/SMW.html">
+                    <img draggable="false" src="img/smw.png" alt="Super Mike World" style="width:300px">
+                </a>
+                <a target="_blank" href="Games/MMO.html">
+                    <img draggable="false" src="img/mmo.png" alt="Massive Multiplayer" style="width:300px">
+                </a>
+                <a target="_blank" href="Games/CMF.html">
+                    <img draggable="false" src="img/cmf.png" alt="Cloud Multiplayer Fun" style="width:300px">
+                </a>
+                <a target="_blank" href="Games/TF2.html">
+                    <img draggable="false" src="img/tf2.png" alt="۩ ＴＥＭＰＬＥＦＯＲＭＥＲ ２ ۩" style="width:300px">
+                </a>
+                <a target="_blank" href="Games/PIC.html">
+                    <img draggable="false" src="img/pic.png" alt="Pop It Clicker" style="width:300px">
+                </a>
+                <a target="_blank" href="Games/SP.html">
+                    <img draggable="false" src="img/sp.png" alt="Snail Platformer" style="width:300px">
+                </a>
+                <a target="_blank" href="Games/GOI.html">
+                    <img draggable="false" src="img/goi.png" alt="Getting over it" style="width:300px">
+                </a>
+                <a target="_blank" href="Games/HCR.html">
+                    <img draggable="false" src="img/hcr.png" alt="Hill Climb Racing" style="width:300px">
+                </a>
+                <a target="_blank" href="Games/GD.html">
+                    <img draggable="false" src="img/gd.png" alt="Geometry Dash" style="width:300px">
+                </a>
+                <a target="_blank" href="Games/TF.html">
+                    <img draggable="false" src="img/tf.png" alt="۩ ＴＥＭＰＬＥＦＯＲＭＥＲ ۩" style="width:300px">
+                </a>
+                <a target="_blank" href="Games/P.html">
+                    <img draggable="false" src="img/p.png" alt="Plantera" style="width:300px">
+                </a>
+                <a target="_blank" href="Games/TD.html">
+                    <img draggable="false" src="img/td.png" alt="Tower Defense" style="width:300px">
+                </a>
+                <a target="_blank" href="Games/MC.html">
+                    <img draggable="false" src="img/mc.png" alt="Mess Craft" style="width:300px">
+                </a>
+                <a target="_blank" href="Games/COOKIE/index.html">
+                    <img draggable="false" src="img/cookie.png" alt="Cookie Clicker" style="width:300px">
+                </a>
+                <a target="_blank" href="Games/DINO/index.html">
+                    <img draggable="false" src="img/dino.png" alt="Dinosuar Game" style="width:300px">
+                </a>
+                <a target="_blank" href="Games/HEXTRIS/index.html">
+                    <img draggable="false" src="img/hextris.png" alt="Hextris" style="width:300px">
+                </a>
+                <a target="_blank" href="Games/HEXGL/index.html">
+                    <img draggable="false" src="img/hexgl.png" alt="HexGL" style="width:300px">
+                </a>
+                <a target="_blank" href="MCUB.html">
+                    <img draggable="false" src="img/mcub.png" alt="HexGL" style="width:300px">
+                </a>
+            </div>
+        </div>
+        <div style="background-color: white; margin-top: 30px; font-size: small;">
+            <p>© BAR 2022</p>
+        </div>
+    </body>
+</html>

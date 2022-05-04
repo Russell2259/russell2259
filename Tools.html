@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <link rel="icon" href="img/favicon.png">
+    <title>Tools | BAR</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bulma/css/bulma.css">
+    <head>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="Home.html">
+                    <img src="img/favicon.png">
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a onclick="location.href='Home.html';" class="navbar-item">
+                        Home
+                    </a>
+
+                    <a onclick="location.href='Games.html';" class="navbar-item">
+                        Games
+                    </a>
+
+                    <a onclick="location.href='GGSafe.html';" class="navbar-item">
+                        GGSafe
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a onclick="location.href='Tools.html';" class="navbar-link">
+                            Tools
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a target="_blank" onclick="window.open('MusicPlayer.html','popup','width=350,height=700');" class="navbar-item">
+                                Music Player
+                            </a>
+                            <a onclick="window.open('Tools/txtencoder.html','popup','width=480,height=360');" class="navbar-item">
+                                Text Encoder
+                            </a>
+                            <a onclick="location.href='Chat.html'" class="navbar-item">
+                                Chat
+                            </a>
+                            <hr class="navbar-divider">
+                            <a onclick="location.href='Tools.html';" class="navbar-item">
+                                See All Tools
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a onclick="window.open('RN.txt','popup','width=480,height=380');" class="navbar-item">
+                            V 1.7.0
+                        </a>
+                        <div class="buttons">
+                            <a onclick="location.href='Logout.html';" class="button is-primary">
+                                <strong>Logout</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <body>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+                body {
+                    background-color: black;
+                    font-family: Montserrat;
+						  color: white;
+                }
+
+                .content {
+                    margin: 50px;
+                    font-family: Montserrat;
+                }
+                .title {
+                    font-size: 50px;
+                    text-align: center;
+                }
+                .headings {
+                    font-size: 20px;
+                    text-align: center;
+                }
+                .text {
+                    text-align: center;
+                    font-size: 12;
+                }
+                .thumbnail {
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                    padding: 5px;
+                    width: 300px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 200%;
+                }
+                .thumbnail:hover {
+                    box-shadow: 0 0 3px 2px grey;
+                    border: 1px solid white;
+                }
+                .thumbnail::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+                .imgContainer {
+                    float: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-bottom: 5%;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 90%;
+                }
+            </style>
+        </body>
+    </head>
+    <body>
+        <div style="margin: 50px; background-color: #ffffff; margin-top: 40px; margin-bottom: 10;" class="notification is-info">
+            <button class="delete"></button>
+            <p style="color: #3850b7;">This is a sandbox file feel free to change any of the code, but please remember that these changes might not be added to the BAR website. If you need any help coding the website or understanding the code click on the button below. Please
+                <strong>DO NOT</strong>
+                delete this popup it will be removed when the BAR site is published.</p>
+            <button class="button">Open Dev Notes</button>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+                        const $notification = $delete.parentNode;
+
+                        $delete.addEventListener('click', () => {
+                            $notification.parentNode.removeChild($notification);
+                        });
+                    });
+                });
+            </script>
+        </div>
+        <br>
+        <h1 class="title" style="color:white;">Tools</h1>
+
+        <div class="content">
+            <a target="_blank" target="popup" onclick="window.open('Tools/txtencoder.html','popup','width=480,height=360');">
+                <img class="thumbnail" src="img/txtencoder.png" style="width:300px">
+            </a>
+            <details>
+                <summary class="headings">Text Encoder (Click to expand)</summary>
+                <p class="text">The text encoder tool allows you to turn text into numbers. You can share these codes with your friends and exchange encoded messages.</p>
+            </details>
+            <a target="_blank" target="popup" onclick="window.open('Tools/calc.html','popup','width=420,height=398');">
+                <img class="thumbnail" src="img/calc.png" style="width:300px">
+            </a>
+            <details>
+                <summary class="headings">Calculator (Click to expand)</summary>
+                <p class="text">The calculator tool allows you to add, subtract, divide and multiply numbers.</p>
+            </details>
+            <a target="_blank" href="Tools/standalone.html">
+                <img class="thumbnail" src="img/twp.png" style="width:300px">
+            </a>
+            <details>
+                <summary class="headings">Turbowarp Packager (Click to expand)</summary>
+                <p class="text">The turbowarp packager tool allows you to package any scratch project.</p>
+            </details>
+            <a target="_blank" onclick="window.open('Tools/jitsicreator.html','popup','width=480,height=360');">
+                <img class="thumbnail" src="img/jitsicreator.png" style="width:300px">
+            </a>
+            <details>
+                <summary class="headings">Jitsi Meet Link Creator (Click to expand)</summary>
+                <p class="text">The Jitsi Meet meeting link creator tool allows you to create a private meeting link in seconds.</p>
+            </details>
+            <a target="_blank" onclick="window.open('MusicPlayer.html','popup','width=350,height=700');">
+                <img class="thumbnail" src="img/mp.png" style="width:300px">
+            </a>
+            <details>
+                <summary class="headings">Music Player (Click to expand)</summary>
+                <p class="text">The Music Player tool allows you to listen to music anywhere at any time and can hold an infinate amount of songs.</p>
+            </details>
+            <a target="_blank" onclick="location.href='Chat.html'">
+                <img class="thumbnail" src="img/chat.png" style="width:300px">
+            </a>
+            <details>
+                <summary class="headings">BAR Chat (Click to expand)</summary>
+                <p class="text">The BAR Chat tool allows you to listen to live chat with BAR users anywhere at any time (with an internet connection). The BAR Chat tool is a private rescource and cannot be blocked easily.</p>
+            </details>
+			              <a target="_blank">
+                <img alt="BAR Calendar" class="thumbnail" src="img/calendar.png" style="width:300px"  onclick="location.href='Calendar.html'">
+            </a>
+            <details>
+                <summary class="headings">BAR Calendar (Click to expand)</summary>
+                <p class="text">The Calendar tool allows you to download the latest releases of the BAR website.</p>
+            </details>
+            <a target="_blank">
+                <img alt="Current version: 1.7.0" class="thumbnail" src="img/170.png" style="width:300px"  onclick="location.href='https://github.com/Russell2259/BARsite/releases/tag/Releases'">
+            </a>
+            <details>
+                <summary class="headings">Website Installer (Click to expand)</summary>
+                <p class="text">The Website Installer tool allows you to download the latest releases of the BAR website.</p>
+            </details>
+            <a target="_blank">
+                <img class="thumbnail" src="img/spt.png" style="width:300px">
+            </a>
+            <details>
+                <summary class="headings">SPT Bookmarklet (Click to expand)</summary>
+                <p class="text">The SPT bookmarklet tool allows you to change the title and logo of any webpage. To use drag the button below into your bookmark bar.
+                </p>
+                <div>
+                    <a draggable="true" ng-attr-href="javascript:void%20function(){javascript:(function(){var%20a=document.querySelector(%22link[rel*='icon']%22)||document.createElement(%22link%22);a.type=%22image/x-icon%22,a.rel=%22shortcut%20icon%22,a.href=%22https://lh4.googleusercontent.com/MDCQ_lxWm3Vp8F-8pauibftRcBpxbOLfCZN0683mQri0Rfp4F3y_6sNnnsZ7X7Oc_MwSrwxVabyt-Kss12PY3EU=w1280%22,document.title=%22|:P%22,console.log(document.title),document.getElementsByTagName(%22head%22)[0].appendChild(a)})()}();">link</a>
+                </div>
+                <button class="button">SPT</button>
+            </details>
+        </div>
+        <div style="background-color: white; margin-top: 30px; font-size: small;">
+            <p>© BAR 2022</p>
+        </div>
+    </body>
+</html>

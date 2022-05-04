@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <link rel="icon" href="img/favicon.png">
+    <title>Chat | BAR Tools Library</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bulma/css/bulma.css">
+    <head>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="Home.html">
+                    <img src="img/favicon.png">
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a onclick="location.href='Home.html';" class="navbar-item">
+                        Home
+                    </a>
+
+                    <a onclick="location.href='Games.html';" class="navbar-item">
+                        Games
+                    </a>
+
+                    <a onclick="location.href='GGSafe.html';" class="navbar-item">
+                        GGSafe
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a onclick="location.href='Tools.html';" class="navbar-link">
+                            Tools
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a target="_blank" onclick="window.open('MusicPlayer.html','popup','width=350,height=700');" class="navbar-item">
+                                Music Player
+                            </a>
+                            <a onclick="location.href='Chat.html'" class="navbar-item">
+                                Chat
+                            </a>
+                            <a onclick="window.open('Tools/jitsicreator.html','popup','width=480,height=360');" class="navbar-item">
+                                Meeting Creator
+                            </a>
+                            <hr class="navbar-divider">
+                            <a onclick="location.href='Tools.html';" class="navbar-item">
+                                See All Tools
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a onclick="window.open('RN.txt','popup','width=480,height=380');" class="navbar-item">
+                            V 1.7.0
+                        </a>
+                        <div class="buttons">
+                            <a onclick="location.href='Logout.html';" class="button is-primary">
+                                <strong>Logout</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <body>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+                #resize {
+                    resize: horizontal;
+                    overflow: auto;
+                    border: 1px silver solid;
+                    width: 320px;
+                    margin: 0 auto;
+                }
+                body {
+                    background-color: #1B4F72;
+                    font-family: Montserrat;
+                    color: #3850b7;
+                }
+
+                .content {
+                    margin: 50px;
+                    font-family: Montserrat;
+                }
+                .title {
+                    font-size: 50px;
+                    text-align: center;
+                    color: white;
+                    background-color: #3850b7;
+                }
+                .headings {
+                    font-size: 20px;
+                    text-align: center;
+                }
+                .text {
+                    text-align: center;
+                    font-size: 12;
+                }
+                .thumbnail {
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                    padding: 5px;
+                    width: 300px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 200%;
+                }
+                .thumbnail:hover {
+                    box-shadow: 0 0 3px 2px grey;
+                    border: 1px solid white;
+                }
+                .thumbnail::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+                .imgContainer {
+                    float: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-bottom: 5%;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 90%;
+                }
+            </style>
+        </body>
+    </head>
+    <body>
+        <div style="margin: 50px; background-color: white; margin-top: 40px; margin-bottom: 10;" class="notification is-info">
+            <button class="delete"></button>
+            <p style="color: #3850b7">This is a sandbox file feel free to change any of the code, but please remember that these changes might not be added to the BAR website. If you need any help coding the website or understanding the code click on the button below. Please
+                <strong>DO NOT</strong>
+                delete this popup it will be removed when the BAR site is published.</p>
+            <button class="button" onclick="window.open('Dev.html')">Open Dev Notes</button>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+                        const $notification = $delete.parentNode;
+
+                        $delete.addEventListener('click', () => {
+                            $notification.parentNode.removeChild($notification);
+                        });
+                    });
+                });
+            </script>
+        </div>
+        <br>
+        <iframe style="width: 100%; height: 800px;" src="https://enccht.barftw.tk/public/index.html" title="BAR Chat" frameborder="0"></iframe>
+        <div style="background-color: white; margin-top: 30px; font-size: small;">
+            <p>© BAR 2022</p>
+        </div>
+    </body>
+</html>

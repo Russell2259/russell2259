@@ -1,0 +1,97 @@
+<!DOCTYPEhtml>
+<html>
+    <link rel="stylesheet" href="bulma/css/bulma.css">
+    <link rel="icon" href="img/bd.png">
+    <title>Website Data | BAR Developer Tools</title>
+    <head>
+        <nav class="level">
+            <p class="level-item has-text-centered">
+                <a onclick="location.href='Home.html'" class="link is-info">Home</a>
+            </p>
+            <p class="level-item has-text-centered">
+                <a onclick="location.href='Tools.html'" class="link is-info">Developer Tools</a>
+            </p>
+            <p class="level-item has-text-centered">
+                <a onclick="location.href='Home.html'"><img src="img/bd.png" alt="Logo" style="height: 80px;"></a>
+            </p>
+            <p class="level-item has-text-centered">
+                <a onclick="location.href='Docs.html'" class="link is-info">BAR Developer Docs</a>
+            </p>
+            <p class="level-item has-text-centered">
+                <a onclick="location.href='Dev.html'" class="link is-info">Logout</a>
+            </p>
+
+        </nav>
+        <div class="bottomborder"></div>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat &display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Stint%20Ultra%20Expanded&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@900&family=Stint+Ultra+Expanded&display=swap');
+
+            html {
+                font-family: Montserrat;
+            }
+            .title {
+                font-family: Stint Ultra Expanded;
+                font-size: 50px;
+            }
+            .text {
+                font-family: Montserrat;
+                font-size: 20px;
+                margin: 10px;
+                text-align: center;
+            }
+            .bodycontainer {
+                margin: 50px;
+            }
+            table,
+            th,
+            td {
+                border: 1px solid black;
+            }
+            body {
+                margin-top: 20px;
+            }
+
+            .bottomborder {
+                margin-bottom: 20px;
+                border-bottom-color: #154360;
+                border-bottom-style: solid;
+                border-bottom-width: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <table style="width:90%; margin: 50px;">
+            <tr>
+                <td class="text">Protocol</td>
+                <td class="text">Url</td>
+                <td class="text">Domain Name</td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="protocol"></div>
+                </td>
+                <td>
+                    <div id="url"></div>
+                </td>
+                <td>
+                    <div id="hostname"></div>
+                </td>
+            </tr>
+        </table>
+        <script>
+            document.getElementById("protocol").innerHTML = window.location.protocol;
+            document.getElementById("url").innerHTML = window.location.href;
+            document.getElementById("hostname").innerHTML = window.location.hostname;
+        </script>
+        <script>
+            $.getJSON('https://ipapi.co/json/', function (data) {
+                console.log(JSON.stringify(data, null, 2));
+            });
+        </script>
+        <div style="background-color: black; margin-top: 30px; font-size: small; background: rgb(0,146,255);background: linear-gradient(83deg, rgba(0,146,255,1) 0%, rgba(0,0,0,1) 100%); color: white;">
+            <p>© BAR Developer Team 2022</p>
+        </div>
+    </body>
+</html>
