@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Weather | BAR Tools Library</title>
+    <title>Weather Tool | BAR Tool Library</title>
+    <link rel="icon" href="img/favicon.png">
     <meta name="theme-color" content="#434557">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
@@ -99,7 +100,7 @@
       right: 0;
       transform: translateY(-50%);
       flex-direction: column;
-      border-left: 1px solid red;
+      border-left: 1px solid #18008f;
       height: 80%;
      }
      .icon_container > img {
@@ -108,8 +109,7 @@
        height: auto;
      }
      p#date_time {
-       color: red;
-       font-size: 13px;
+       color: #18008f;
      }
     .data  {
        padding:40px 30px;
@@ -187,7 +187,7 @@
    const cityName = form.querySelector('#city').value;
    const map = document.querySelector('#map');
    const apiKey = '4d8fb5b93d4af21d66a2948710284366'
-   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`)
+   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=imperial`)
      .then((response) => response.json())
      .then((data) => {
        const description = data.weather[0].description;
@@ -198,6 +198,7 @@
        const temp = Math.round(data.main.temp);
        const feels_like = Math.round(data.main.feels_like);
        const humidity = Math.round(data.main.humidity);
+		 const wind = data.wind.speed;
        map.innerHTML = `<iframe width="100%" height="520px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&t=m&ll=${lat}, ${long}&spn=0.003381,0.017231&z=10&output=embed"></iframe>`;
        const url = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${data.weather[0].icon}.svg`;
        //console.log(data);
@@ -262,16 +263,16 @@
        time = `${time}:${mins}`;
        data_container.innerHTML = `
      <div class="ar">
-     <p id="date_time">${month} ${day}, ${year}<br> ${time}${type}</p>
+     <p id="date_time"> ${month} ${day}, ${year}<br> ${time}${type}</p>
        <h3 class="city">${city}</h3>
-       <small>${country}</small>
-       <p id="feels_like">Feels like ${feels_like}°C</p>
+       <p id="feels_like">Feels like ${feels_like}°F</p>
        <p id="cast">${description}</p>
        <p>Humidity: ${humidity}%</p>
+       <p>Wind Speed: ${wind} mph</p>
        </div>
          <div class="icon_container">
            <img src='${url}' width="50%" id="icon" alt="icon"> 
-           <h1>${temp}°C</h1>
+           <h1>${temp}°F</h1>
          </div>
      `;
    
