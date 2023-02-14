@@ -19,6 +19,7 @@
 <p align="center">
   <a href="https://github.com/Russell2259/3kh0-CDN"><img src="https://github-readme-stats.vercel.app/api/pin/?username=russell2259&repo=3kh0-CDN&show_icons=true&theme=dark" /></a>
   <a href="https://github.com/Russell2259/Geode"><img src="https://github-readme-stats.vercel.app/api/pin/?username=russell2259&repo=Geode&show_icons=true&theme=dark" /></a>
+  <a href="https://github.com/3kh0/3kh0.github.io"><img src="https://github-readme-stats.vercel.app/api/pin/?username=3kh0&repo=3kh0.github.io&show_icons=true&theme=dark" /></a>
 </p>
 <br>
 <h2 align="center">Stats</h2>
