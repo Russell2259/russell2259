@@ -4,9 +4,6 @@
   Hello 👋, I'm Russell2259 also known as Mr. Sprout in other places online.
   <br>
   <br>
-  Pronouns: he/him
-  <br>
-  <br>
   <a href="#">
     <img src="https://skillicons.dev/icons?i=md,html,javascript,css,nodejs,python,java" />
     <br>
