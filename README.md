@@ -1,3 +1,5 @@
+<p align="center"><img src="https://avatars.githubusercontent.com/u/84256826" width="200px"/></p>
+
 <h1 align="center">Russell2259</h1>
 
 <p align="center">
@@ -8,7 +10,7 @@
     <img src="https://skillicons.dev/icons?i=md,html,javascript,css,nodejs,python,java" />
     <br>
     <br>
-    <img src="https://skillicons.dev/icons?i=vscode,eclipse,github,figma" />
+    <img src="https://skillicons.dev/icons?i=vscode,eclipse,github,cloudflare,figma" />
   </a>
 </p>
 <br>
