@@ -3,11 +3,11 @@
 <h1 align="center">Russell2259</h1>
 
 <p align="center">
-  Hello 👋, I'm Russell2259 also known as Mr. Sprout in other places online.
+  Hello 👋, I'm Russell2259. I am a hobbyist full stack developer.
   <br>
   <br>
   <a href="#">
-    <img src="https://skillicons.dev/icons?i=md,html,javascript,css,nodejs,python,java" />
+    <img src="https://skillicons.dev/icons?i=md,html,javascript,css,nodejs,python,java,typescript,electron" />
     <br>
     <br>
     <img src="https://skillicons.dev/icons?i=vscode,eclipse,github,cloudflare,figma" />
