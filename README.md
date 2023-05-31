@@ -16,7 +16,7 @@
 <br>
 <h2 align="center">Projects</h2>
 <p align="center">
-  <a href="https://github.com/Russell2259/3kh0-CDN"><img src="https://github-readme-stats.vercel.app/api/pin/?username=russell2259&repo=3kh0-CDN&show_icons=true&theme=dark" /></a>
+  <a href="https://github.com/Russell2259/Easyviolet"><img src="https://github-readme-stats.vercel.app/api/pin/?username=russell2259&repo=Easyviolet&show_icons=true&theme=dark" /></a>
   <a href="https://github.com/EmberNetwork/Blaze"><img src="https://github-readme-stats.vercel.app/api/pin/?username=EmberNetwork&repo=Blaze&show_icons=true&theme=dark" /></a>
 </p>
 <br>
