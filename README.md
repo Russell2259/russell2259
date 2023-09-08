@@ -3,19 +3,33 @@
 <h1 align="center">Russell2259</h1>
 
 <p align="center">
-  Hello 👋, I'm Russell2259. I am a hobbyist full stack developer.
+  Hello 👋, I'm Russell2259. Full stack developer and privacy enthusiast. Interested in cyber security.
   <br>
   <br>
   <a href="#">
-    <img src="https://skillicons.dev/icons?i=md,html,javascript,css,nodejs,python,java,typescript,electron" />
+    <img src="https://skillicons.dev/icons?i=md,html,javascript,css,nodejs,python,java,typescript,electron,mongodb" />
     <br>
     <br>
     <img src="https://skillicons.dev/icons?i=vscode,eclipse,github,cloudflare,figma" />
   </a>
+  
+  <h3 align="center">Socials</h3>
+  <p align="center">
+    <a href="https://discord.com/users/1082457685598937209">
+        <img src="https://skillicons.dev/icons?i=discord" />
+    </a>
+    <a href="https://github.com/Russell2259">
+        <img src="https://skillicons.dev/icons?i=github" />
+    </a>
+  </p>
 </p>
+
 <br>
+
 <h2 align="center">Projects</h2>
 <p align="center">
+  <a href="https://github.com/EmberNetwork/GameHub"><img src="https://github-readme-stats.vercel.app/api/pin/?username=EmberNetwork&repo=GameHub&show_icons=true&theme=dark" /></a>
+  <a href="https://github.com/EmberNetwork/Mirror"><img src="https://github-readme-stats.vercel.app/api/pin/?username=EmberNetwork&repo=Mirror&show_icons=true&theme=dark" /></a>
   <a href="https://github.com/Russell2259/Easyviolet"><img src="https://github-readme-stats.vercel.app/api/pin/?username=russell2259&repo=Easyviolet&show_icons=true&theme=dark" /></a>
   <a href="https://github.com/EmberNetwork/Blaze"><img src="https://github-readme-stats.vercel.app/api/pin/?username=EmberNetwork&repo=Blaze&show_icons=true&theme=dark" /></a>
 </p>
