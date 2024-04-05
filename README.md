@@ -1,7 +1,5 @@
 <p align="center"><img src="https://avatars.githubusercontent.com/u/84256826" width="200px"/></p>
 
-<h1 align="center">Russell2259</h1>
-
 <p align="center">
   Hello 👋, I'm Russell2259. Full stack developer and privacy enthusiast. Interested in cyber security.
   
@@ -9,7 +7,7 @@
   <br>
   
   <a href="#">
-    <img src="https://skillicons.dev/icons?i=md,html,javascript,css,nodejs,python,java,typescript,electron,mongodb" />
+    <img src="https://skillicons.dev/icons?i=md,html,typescript,javascript,css,vue,react,nodejs,python,java,electron,mongodb" />
     <br>
     <br>
     <img src="https://skillicons.dev/icons?i=vscode,eclipse,github,cloudflare,figma" />
@@ -25,12 +23,4 @@
         <img src="https://skillicons.dev/icons?i=github" />
     </a>
   </p>
-</p>
-
-<h2 align="center">Stats</h2>
-
-<p align="center">
-  <p align="center"><img src="https://github-readme-stats.vercel.app/api?username=Russell2259&show_icons=true&theme=dark" /></p>
-  <p align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Russell2259&layout=compact&show_icons=true&theme=dark" /></p>
-  <p align="center"><img src="https://github-readme-streak-stats.herokuapp.com?user=Russell2259&theme=github-dark-blue&border_radius=4.5" /></p>
 </p>
