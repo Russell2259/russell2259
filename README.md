@@ -7,7 +7,7 @@
   <br>
   
   <a href="#">
-    <img src="https://skillicons.dev/icons?i=md,html,typescript,javascript,css,vue,react,nodejs,python,java,electron,mongodb" />
+    <img src="https://skillicons.dev/icons?i=md,html,javascript,typescript,css,python" />
     <br>
     <br>
     <img src="https://skillicons.dev/icons?i=vscode,eclipse,github,cloudflare,figma" />
